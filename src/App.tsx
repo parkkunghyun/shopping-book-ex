@@ -1,8 +1,13 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
 
-function App() {
+const App = () => {
   return (
-    <h1>쇼핑몰 앱 만들기</h1>
-  );
+    <Routes>
+      <Route index element={<HomePage/>} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App
